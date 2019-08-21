@@ -1,0 +1,8 @@
+<h1>Welcome to bNbAiR!</h1>
+<p>Some suggestions:</p>
+<% @flats.each do |flat| %>
+  <div>
+    <%= link_to flat.name, flat_path(flat) %>
+  </div>
+<% end %>
+<%= link_to "Add a flat!", new_flat_path %>
